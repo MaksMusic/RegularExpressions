@@ -11,7 +11,7 @@ public class regular_b {
         Pattern pattern = Pattern.compile("^Joni$");//создать правило
         Matcher matcher = pattern.matcher(text);//проверка
         System.out.println(matcher.matches());//получение результата проверки
-        ///////////////////
+        ////////////////////////
 
 
 
