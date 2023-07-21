@@ -17,8 +17,8 @@ public class regular_b implements Cloneable{
 
 
         //поиск текса с разными вариантами Россия России россия россии и после замена его на подстроку
-        String text3 = "Привет Анна ты из Россия ?  ";
-        System.out.println(text3.replaceAll("[Ро]осси[ия]","Канады")); //замена текста во всем тексте
+        String text3 = "Привет Анна ты из россии ?  ";
+        System.out.println(text3.replaceAll("[Рр]осси[ия]","Канады")); //замена текста во всем тексте
 
 
 
