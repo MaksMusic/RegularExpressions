@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
-public class regular_b {
+public class regular_b implements Cloneable{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -45,9 +45,10 @@ public class regular_b {
 
         //вытащить из строки только года
 
-        String text6 = "в 19512 году вышел новый сайт который был написан еще в 19112 году который умеет регистрировать ";
+        String text6 = "в 1951 году вышел новый сайт который был написан еще в 19112 году который умеет регистрировать ";
         Pattern pt6  = Pattern.compile("\\d{4}\\W");//поиск 4 цифр
         Matcher matcher6 = pt6.matcher(text6);
+        System.out.println(matcher6.matches()+" mathcers");
 //        System.out.println(matcher6.find()); //проверят есть ли паттерн в строке
 
         while (matcher6.find()){
