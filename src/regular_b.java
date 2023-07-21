@@ -22,21 +22,22 @@ public class regular_b implements Cloneable{
 
 
 
-        //прнимает текст и проверяет его на соответствие строки "Joni"
+        //принимает текст и проверяет его на соответствие строки "Joni" или "Jone"
         String text = "Joni";
-        Pattern pattern = Pattern.compile("^Joni$");//создать правило
+        Pattern pattern = Pattern.compile("^Jon[ie]$");//создать правило
         Matcher matcher = pattern.matcher(text);//проверка
-        System.out.println(matcher.matches());//получение результата проверки
+        System.out.println(matcher.matches() + " ->  Result equalse Joni");//получение результата проверки
 
 
         //проверка введен ли год (4 цифры)
-        String text4 = "2022";
-        Pattern pt2 = Pattern.compile("\\d\\d\\d\\d"); // or "\\d{4}"
+        String text4 = "2023";
+        Pattern pt2 = Pattern.compile("\\d{4}"); // or \\d\\d\\d\\d
         Matcher matcher1 = pt2.matcher(text4);
-        System.out.println(matcher1.matches()); //проверка на соответсвие с паттерном (состоит ли строка из 4 чисел)
+        System.out.println(matcher1.matches()+ " -> result year"); //проверка на соответствие с паттерном (состоит ли строка из 4 чисел)
 
 
         //проверка введен ли email
+        //строк не менее 3 символов после @ после снова строка после точка после снова строка от 2 до 3 символов
         String text5 = "J_on123i@mail.ru";
         Pattern pt3  = Pattern.compile("\\w{3,}@\\w+.\\w{2,3}");
         Matcher matcher2 = pt3.matcher(text5);
