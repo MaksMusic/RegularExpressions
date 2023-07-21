@@ -52,6 +52,7 @@ public class regular_b implements Cloneable{
         System.out.println(matcher6.matches()+" mathcers");
 //        System.out.println(matcher6.find()); //проверят есть ли паттерн в строке
 
+        //пока есть паттерн выводим его
         while (matcher6.find()){
             System.out.println(matcher6.group());
         }
