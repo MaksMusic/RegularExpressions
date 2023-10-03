@@ -1,3 +1,6 @@
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class Regex1 {
     public static void main(String[] args) {
         String s =
@@ -15,6 +18,39 @@ public class Regex1 {
 
                         "Sokolov Anna,Russia,Moscow,Arbat street,29,Flat 22," +
                         "email:asokolov@hotmail.com,Postcode 98765,Phone number: +79012345678;";
+
+//        Pattern pattern = Pattern.compile("\\w+");
+//        Matcher matcher = pattern.matcher(s);
+//        while (matcher.find()) {
+//            System.out.println(matcher.start() + " " + matcher.group());
+
+//        Найти все номера домов и квартир состоящие из 2 цифр
+//            Pattern pattern = Pattern.compile("\\b\\d{2}\\b");
+//            Matcher matcher = pattern.matcher(s);
+//            while (matcher.find()) {
+//                System.out.println(matcher.start() + " " + matcher.group());
+
+
+//        Найти все номера телефонов состоящие из 9 символов
+//        Pattern pattern = Pattern.compile("\\+\\d{9}");
+//            Matcher matcher = pattern.matcher(s);
+//            while (matcher.find()) {
+//                System.out.println(matcher.start() + " " + matcher.group());
+
+
+//        Найти все email
+//        Pattern pattern = Pattern.compile("\\w+@\\w+\\.(ru|com)");
+//            Matcher matcher = pattern.matcher(s);
+//            while (matcher.find()) {
+//                System.out.println(matcher.start() + " " + matcher.group());
+
+        Pattern pattern = Pattern.compile("\\w+@\\w+\\.(ru|com)");
+        Matcher matcher = pattern.matcher(s);
+        while (matcher.find()) {
+            System.out.println(matcher.start() + " " + matcher.group());
+
+
+    }
 
 
     }
