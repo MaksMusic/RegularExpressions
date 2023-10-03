@@ -23,6 +23,7 @@ public class Regex6 {
     //03 если число 1 вывод будет 001
     //- варавнивание по левой стороне и 12 символов
     //,.1f округление до 1 числа после точки
+
     static void employeeInfo(Employee employee){
         //String text = String.format("");//
         System.out.printf("id: %03d name:%12s surname:%12s salary: %,.1f\n" ,
