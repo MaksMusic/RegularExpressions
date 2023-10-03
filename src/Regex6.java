@@ -5,11 +5,11 @@ public class Regex6 {
         Employee employee2 =
                 new Employee(122,"Tomwef","Jenwefitu",20200,77.7);
         Employee employee3 =
-                new Employee(1123,"Tomwe","Jenitu",2000,77.7);
+                new Employee(117,"Tomwe","Jenitu",2000,77.7);
         Employee employee4 =
-                new Employee(111,"Tom","Jenitu",2000,77.7);
+                new Employee(177,"Tom","Jenitu",2000,77.7);
         Employee employee5 =
-                new Employee(13,"Tom","Jenitu",2000,77.7);
+                new Employee(17,"Tom","Jenitu",2000,77.7);
 
         employeeInfo(employee1);
         employeeInfo(employee2);
