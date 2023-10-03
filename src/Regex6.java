@@ -16,11 +16,13 @@ public class Regex6 {
         employeeInfo(employee3);
         employeeInfo(employee4);
         employeeInfo(employee5);
+
+
     }
 
-    //03 если число 1 вывод будет 001
-    //- варавнивание по левой стороне и 12 символов
-    //,.1f округление до 1 числа после точки
+    //03 РµСЃР»Рё С‡РёСЃР»Рѕ 1 РІС‹РІРѕРґ Р±СѓРґРµС‚ 001
+    //- РІР°СЂР°РІРЅРёРІР°РЅРёРµ РїРѕ Р»РµРІРѕР№ СЃС‚РѕСЂРѕРЅРµ Рё 12 СЃРёРјРІРѕР»РѕРІ
+    //,.1f РѕРєСЂСѓРіР»РµРЅРёРµ РґРѕ 1 С‡РёСЃР»Р° РїРѕСЃР»Рµ С‚РѕС‡РєРё
     static void employeeInfo(Employee employee){
         //String text = String.format("");//
         System.out.printf("id: %03d name:%12s surname:%12s salary: %,.1f\n" ,
